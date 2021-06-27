@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF6F4">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pdf3"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="150dp"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_toRightOf="@id/iv_image"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:maxLines="3"
+        android:text="@string/file_name"
+        android:textColor="#824404"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+   <!-- android:paddingEnd="10dp"-->
+    <TextView
+        android:id="@+id/time_name"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_toRightOf="@id/tv_name"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:maxLines="2"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="time_name"
+        android:textColor="#824404"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/size_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="size_name"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_marginStart="250dp"
+        android:paddingEnd="10dp"
+        android:layout_toRightOf="@id/time_name"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:layout_marginLeft="150dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingRight="10dp"
+        android:textSize="12sp"
+        android:textColor="#824404"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+</RelativeLayout>
