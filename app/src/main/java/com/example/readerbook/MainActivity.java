@@ -115,23 +115,17 @@ public class MainActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
                             case R.id.one:
                                 Collections.sort(fileList, FileComparator.compareFilesByName);
-                                list_view.setAdapter(null);
-                                obj_adapter = new Adapter(getApplicationContext(), fileList);
-                                list_view.setAdapter(obj_adapter);
-                                return true;
+                                break;
                             case R.id.two:
                                 Collections.sort(fileList, FileComparator.compareFilesByDate);
-                                list_view.setAdapter(null);
-                                obj_adapter = new Adapter(getApplicationContext(), fileList);
-                                list_view.setAdapter(obj_adapter);
-                                return true;
+                                break;
                             case R.id.three:
                                 Collections.sort(fileList, FileComparator.compareFilesBySize);
-                                list_view.setAdapter(null);
-                                obj_adapter = new Adapter(getApplicationContext(), fileList);
-                                list_view.setAdapter(obj_adapter);
-                                return true;
+                                break;
                         }
+                        list_view.setAdapter(null);
+                        obj_adapter = new Adapter(getApplicationContext(), fileList);
+                        list_view.setAdapter(obj_adapter);
                         return true;
                     }
                 });
